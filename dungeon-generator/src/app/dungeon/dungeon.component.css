@@ -1,0 +1,207 @@
+* {
+  padding: 5px;
+}
+
+.dungeon  {
+  margin-left:auto;
+  margin-right:auto;
+
+
+}
+
+.wall {
+  background-color: #25131a;
+  color: transparent; 
+  padding: 10px;
+}
+.path {
+  color: transparent;
+  background-image: url('../../assets/Dungeon_Tileset/sprite_007.png');
+  background-size: 32px;
+  padding: 10px;
+}
+
+.top-wall {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_041.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+
+.bottom-wall {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_002.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.left-wall {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_005.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.right-wall {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_000.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.top-wall.right-wall {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_055.png');
+  background-repeat:no-repeat;
+  background-size: 32px; 
+}
+.top-wall.left-wall {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_050.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.bottom-wall.left-wall {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_002.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.bottom-wall.right-wall {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_002.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.top-left-corner {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_045.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.top-right-corner {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_040.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.bottom-left-corner {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_005.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.bottom-right-corner {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_000.png');
+  background-repeat:no-repeat;
+  background-size: 32px; 
+}
+
+.top-left-corner.top-right-corner {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_041.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.top-right-corner.bottom-wall {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_002.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.top-right-corner.bottom-left-corner {
+  background-image: url('../../assets/Dungeon_Tileset/left-wall-top-right-corner.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+
+.left-wall.right-wall {
+  background-image: url('../../assets/Dungeon_Tileset/left_right_walls.png');
+  background-repeat:no-repeat;
+}
+.right-wall.bottom-left-corner {
+  background-image: url('../../assets/Dungeon_Tileset/left_right_walls.png');
+  background-repeat:no-repeat;
+}
+.left-wall.bottom-right-corner {
+  background-image: url('../../assets/Dungeon_Tileset/left_right_walls.png');
+  background-repeat:no-repeat;
+}
+
+.left-wall.right-wall.bottom-wall {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_002.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+
+
+.left-wall.right-wall.top-wall {
+  background-image: url('../../assets/Dungeon_Tileset/Aframe.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+
+.top-left-corner.bottom-wall {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_002.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.top-left-corner.right-wall {
+  background-image: url('../../assets/Dungeon_Tileset/right-wall-top-left-corner.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.top-left-corner.bottom-right-corner{
+  background-image: url('../../assets/Dungeon_Tileset/right-wall-top-left-corner.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.top-right-corner.left-wall {
+  background-image: url('../../assets/Dungeon_Tileset/left-wall-top-right-corner.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.bottom-wall.top-right-corner.left-wall {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_002.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+
+.left-wall.right-wall.bottom-wall {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_002.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.top-wall.bottom-left-corner.bottom-right-corner {
+  background-image: url('../../assets/Dungeon_Tileset/Aframe.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.bottom-wall.right-wall.top-left-corner {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_002.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.top-wall.bottom-left-corner {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_050.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.top-wall.bottom-left-corner.bottom-right-corner {
+  background-image: url('../../assets/Dungeon_Tileset/left_right_walls.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.top-wall.bottom-right-corner {
+  background-image: url('../../assets/Dungeon_Tileset/sprite_055.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+
+.top-wall.right-wall.bottom-left-corner {
+  background-image: url('../../assets/Dungeon_Tileset/Aframe.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.top-wall.left-wall.bottom-right-corner {
+  background-image: url('../../assets/Dungeon_Tileset/Aframe.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.right-wall.top-left-corner.bottom-right-corner {
+  background-image: url('../../assets/Dungeon_Tileset/left_right_walls.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+.bottom-right-corner.bottom-left-corner {
+  background-image: url('../../assets/Dungeon_Tileset/left_right_walls.png');
+  background-repeat:no-repeat;
+  background-size: 32px;
+}
+
+
+

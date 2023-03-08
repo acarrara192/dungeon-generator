@@ -1,0 +1,68 @@
+<div style="display:table">
+  <form (ngSubmit)="onSubmit(f)" #f = "ngForm">
+    <div class="form-group">
+      <div style = "display: table-cell">
+        <label for="dungeonDim"> Size: </label>
+        <input
+        type="number"
+        class="form-control"
+        id = "dungeonDim"
+        name = "dungeonDim"
+        style = "width: 70px"
+        min = "10"
+        max = "50"
+        ngModel
+        required
+        >
+      </div>
+      <div style = "display: table-cell">
+        <label for="numTunnels"> numTunnels: </label>
+        <input
+        type="number"
+        class="form-control"
+        id = "numTunnels"
+        name = "numTunnels"
+        style = "width: 70px"
+        min = "1"
+        ngModel
+        required
+        >
+      </div>
+      <div style = "display: table-cell">
+        <label for="maxLength"> maxLength: </label>
+        <input
+        type="number"
+        class="form-control"
+        id = "maxLength"
+        name = "maxLength"
+        style = "width: 70px"
+        min = "1"
+        ngModel
+        required
+        >
+      </div>
+    </div>
+    <button type="ngSubmit"> Generate </button>
+  </form>
+  <div class="dungeon" *ngIf = "hasGenerated">
+    <div *ngFor="let row of dungeon; let j = index">
+      <span 
+      *ngFor="let pixel of row; let i = index" 
+      [ngClass]="{
+        'wall' : pixel == 1 , 
+        'path' : pixel == 0, 
+        'top-wall' : chooseBorder('top', j, i),
+        'bottom-wall' : chooseBorder('bottom', j, i),
+        'left-wall' : chooseBorder('left', j, i),
+        'right-wall' : chooseBorder ('right', j, i),
+        'top-left-corner' : chooseBorder('top-left', j, i),
+        'top-right-corner' : chooseBorder('top-right', j, i),
+        'bottom-right-corner' : chooseBorder('bottom-right', j, i),
+        'bottom-left-corner': chooseBorder('bottom-left', j, i),
+        'middle-vertical' : chooseBorder('middle-vertical', j, i)
+      }">
+        {{ pixel }}
+      </span>
+    </div>
+  </div>
+</div>
